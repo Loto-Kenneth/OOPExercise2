@@ -1,0 +1,13 @@
+public class Main {
+	public static void main(String [] args){
+		Cars cars;
+		Lamborghini lamborghini = new Lamborghini("Aventador.", 1, "V12-powered");
+		Ferrari ferrari = new Ferrari("296 GTB.", 1, "V8 engine");
+		
+		cars = lamborghini;
+		System.out.println(cars.makesound() + " " + "My name is " + cars.getName());
+		
+		cars = ferrari;
+		System.out.println(cars.makesound() + " " + "My name is " + cars.getName());
+	}
+}
